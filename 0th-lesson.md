@@ -29,7 +29,7 @@
    ```bash
    cat /etc/os-release | grep "PRETTY_NAME"
    ```
-     Должны получить `PRETTY_NAME="Debian GNU/Linux 13 (trixie)"`
+   Должны получить `PRETTY_NAME="Debian GNU/Linux 13 (trixie)"`
 4. Обновим пакеты коммандой:
    ```bash
    apt update && apt upgrade
@@ -45,8 +45,26 @@
    ```
    - Сохраняем и выходим из файла(ctrl+o enter ctrl+x) и прописываем команду для перезапуска sshd:
    ```bash
-   systemctl restart ssh
+   systemctl restart ssh && systemctl status ssh | grep "Active:"
    ```
+   Должно быть: 'Active: active (running)...'
+   - Узнаём ip-адрес нашей тачки:
+   ```bash
+   ip -c a
+   ```
+   Должны получить 2 адреса: 1) lo-адрес и 2) в **моём** случае адаптера ens33 c адресом 192.168.0.21, запомним.
+   ![Debian-docker-practice-ip-c-a-command](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/Debian-docker-practice-ip-c-a-command.png?raw=true)
+   
+7. Выйдем из окна ВМ сочетанием клавишь ctrl+alt и откроем программу mRemoteNG:
+   ![mRemoteNG-main-gui](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-main-gui.png?raw=true)
+
+8. Нажмём "Файл" -> "Новое подключение" или ctrl+n:
+   ![mRemoteNG-new-connection](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-new-connection.png?raw=true)
+
+9. Пишем имя подключения, к примеру "Debian-docker-practice", нажимаем enter и смотрим ниже на вкладку "Конфигурация":
+   ![mRemoteNG-configuration-tab](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-configuration-tab.png?raw=true)
+
+10. 
    
 
 Источники:
