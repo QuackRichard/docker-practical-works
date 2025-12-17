@@ -22,7 +22,7 @@
 
 Перейдём к дейстию:
 1. Скачиваем и устанавливаем VMware workstation, mRemoteNG и iso образа ОС Debian, установка VMware workstation пройдёт без проблем так как после ноября 2024 года, программа стала бесплатной для всех, поэтому просто кликаем по принципу next, next install. По такому же принципу устанавливаем mRemoteNG.
-2. Создание нашей первой машины хорошо описали [тут](https://remontka.pro/vmware-workstation/#:~:text=%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B%20%D0%B2%20VMware%20Workstation%20Pro).
+2. Создание нашей первой машины хорошо описали [тут](https://remontka.pro/vmware-workstation/#:~:text=%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B%20%D0%B2%20VMware%20Workstation%20Pro) и [тут](https://dtf.ru/howto/2433221-ustanovka-linux-debian-dlya-nachinayushih). 
 
 Источники:
 1) [mRemoteNG documentation](https://mremoteng.readthedocs.io/en/v1.77.3-dev/)
