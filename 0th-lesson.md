@@ -21,7 +21,7 @@
    - ОС Debian - тут как с [женой](https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BD%D0%B0), сам особо не понял почему полюбил именно её.
 
 Перейдём к дейстию:
-<br>❗ПРЕДУПРЕЖДЕНИЕ❗: Работа из-под root пользователя как показана тут, противопоказана на реальных проектах, это учебный стенд, который не жалко в случае поломки системы!
+<br>❗ПРЕДУПРЕЖДЕНИЕ❗: Работа из-под root пользователя как показана тут, противопоказана на реальных проектах, это учебный стенд, который не жалко в случае поломки системы! Если нужна установка Docker'а, переходим сразу на 13-й этап.
 1. Скачиваем и устанавливаем VMware workstation, mRemoteNG и iso образа ОС Debian, установка VMware workstation пройдёт без проблем так как после ноября 2024 года, программа стала бесплатной для всех, поэтому просто кликаем по принципу next, next install. По такому же принципу устанавливаем mRemoteNG.
 2. Создание нашей первой машины хорошо описали [тут](https://remontka.pro/vmware-workstation/#:~:text=%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B%20%D0%B2%20VMware%20Workstation%20Pro) и [тут](https://dtf.ru/howto/2433221-ustanovka-linux-debian-dlya-nachinayushih), так же не забудьте при установке поставить галку на пункте про ssh server.
 3. После того как мы попали в нашу ос, можем приступать к установке самого Docker:
@@ -29,7 +29,7 @@
    ```bash
    cat /etc/os-release | grep "PRETTY_NAME"
    ```
-   Должны получить `PRETTY_NAME="Debian GNU/Linux 13 (trixie)"`
+   - Должны получить `PRETTY_NAME="Debian GNU/Linux 13 (trixie)"`
 4. Обновим пакеты коммандой:
    ```bash
    apt update && apt upgrade
@@ -47,27 +47,27 @@
    ```bash
    systemctl restart ssh && systemctl status ssh | grep "Active:"
    ```
-   Должно быть: 'Active: active (running)...'
-   - Узнаём ip-адрес нашей тачки:
+   - Должно быть: 'Active: active (running)...'
+6. Узнаём ip-адрес нашей тачки:
    ```bash
    ip -c a
    ```
    Должны получить 2 адреса: 1) lo-адрес и 2) в **моём** случае адаптера ens33 c адресом 192.168.0.21, запомним.
    ![Debian-docker-practice-ip-c-a-command](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/Debian-docker-practice-ip-c-a-command.png?raw=true)
    
-6. Выйдем из окна ВМ сочетанием клавишь ctrl+alt и откроем программу mRemoteNG:
+7. Выйдем из окна ВМ сочетанием клавишь ctrl+alt и откроем программу mRemoteNG:
    ![mRemoteNG-main-gui](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-main-gui.png?raw=true)
 
-7. Нажмём "Файл" -> "Новое подключение" или ctrl+n:
+8. Нажмём "Файл" -> "Новое подключение" или ctrl+n:
    ![mRemoteNG-new-connection](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-new-connection.png?raw=true)
 
-8. Пишем имя подключения, к примеру "Debian-docker-practice", нажимаем enter и смотрим ниже на вкладку "Конфигурация":
+9. Пишем имя подключения, к примеру "Debian-docker-practice", нажимаем enter и смотрим ниже на вкладку "Конфигурация":
    ![mRemoteNG-configuration-tab](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-configuration-tab.png?raw=true)
 
-9. В этой вкладке есть множество настроек:
+10. В этой вкладке есть множество настроек:
    - Из интересного:
       - Значок - для быстрой навигации по подключениям.
-      - Имя вкладки - при открытие нескольких соединений с одинаковым именем вкладки, они логично будут в одной вкладке, удобно для группирования нескольких подключений.
+      - Имя вкладки - при открытие нескольких соединений с одинаковым именем вкладки, они логично будут в одной вкладке, удобно для группировки нескольких подключений.
    - Из нужного:
         - Имя хоста / IP - сюда пишем ip, который ранее запомнили.
         - Пользователь - так как это учебный стенд, пишу root
@@ -75,11 +75,12 @@
         - Протокол - SSH version 2
         - Порт - 22
 
-   - После успешной настройки подключения, огонёк правее иконки стал зелёным.
-   
-   ![mRemoteNG-configuration-tab-complete](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-configuration-tab-complete.png?raw=true)
+11. После успешной настройки подключения, огонёк правее иконки стал зелёным.
+   <br>![mRemoteNG-configuration-tab-complete](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-configuration-tab-complete.png?raw=true)
 
-10. Нажимаем два раза по подключению, выбираем "Да" и попадаем на сервер.
+12. Нажимаем два раза по подключению, выбираем "Да" и попадаем на сервер.
+
+13. Установка Docker:
    
 Источники:
 1) [mRemoteNG documentation](https://mremoteng.readthedocs.io/en/v1.77.3-dev/)
