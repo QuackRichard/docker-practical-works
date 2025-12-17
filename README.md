@@ -32,6 +32,8 @@ Docker - технология, позволяющая контейнизиров
 4) Registry - Место хранения различных Image'ов
 5) Docker Compose - Позволяет описать **ЧТО** нужно после запуска конетейнера, а не **КАК** это создать. Благодаря подходу **ЧТО** позволяет развернуть приложение, состоящие не только из одного сервиса.
 
+Содержание WIP:
+[0-й урок, установка и настройка](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson.md)
 
 Источники:
 1) [Tech Upskill : A Brief History of Containers](https://youtu.be/NtCNAxq_jVw)
