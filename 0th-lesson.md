@@ -3,7 +3,7 @@
 
 ![mRemoteNG](https://github.com/mRemoteNG/mRemoteNG/blob/mRemoteNGProjectFiles/Header_dark.png?raw=true)
 
-В нулевом уроке будет описанно, как установить Docker в ОС Debian и настроить удобную среду с помощью программы mRemoteNG
+В нулевом уроке будет описано, как настроить удобную среду с помощью программы mRemoteNG
 ---
 > После окончания своей первой рабочей недели в FishTech, Ивану стало интересно поработать с Docker самостоятельно. Самому узнать как его установить, настроить и наконец увидеть версию установленного именно им Docker'а. Основной/домашней ОС Ивана является Windows 10. Начал Иван с выбора и установки программы [гипервизора](https://www.rusonyx.ru/blog/post/chto-takoe-hypervisor/), выбор его пал на VMware Workstation и ОС [Debian](https://www.debian.org/index.html). После успешной установки как программы для виртуализации, так и гостевой ОС, Иван скачал и установил Docker, затем узнал версию программы, успех.
 
@@ -26,12 +26,12 @@
 1. Скачиваем и устанавливаем VMware workstation, mRemoteNG и iso образа ОС Debian, установка VMware workstation пройдёт без проблем так как после ноября 2024 года, программа стала бесплатной для всех, поэтому просто кликаем по принципу next, next install. По такому же принципу устанавливаем mRemoteNG.
 2. Создание нашей первой машины хорошо описали [тут](https://remontka.pro/vmware-workstation/#:~:text=%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B%20%D0%B2%20VMware%20Workstation%20Pro) и [тут](https://dtf.ru/howto/2433221-ustanovka-linux-debian-dlya-nachinayushih), так же не забудьте при установке поставить галку на пункте про ssh server.
 3. После того как мы попали в нашу ос, можем приступать к установке самого Docker:
-   - Удостоверемся, что установили именно 13-й Debian коммандой:
+   - Удостоверимся, что установили именно 13-й Debian командой:
    ```bash
    cat /etc/os-release | grep "PRETTY_NAME"
    ```
    - Должны получить `PRETTY_NAME="Debian GNU/Linux 13 (trixie)"`
-4. Обновим пакеты коммандой:
+4. Обновим пакеты командой:
    ```bash
    apt update && apt upgrade
    ```
@@ -56,7 +56,7 @@
    Должны получить 2 адреса: 1) lo-адрес и 2) в **моём** случае адаптера ens33 c адресом 192.168.0.21, запомним.
    ![Debian-docker-practice-ip-c-a-command](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/Debian-docker-practice-ip-c-a-command.png?raw=true)
    
-7. Выйдем из окна ВМ сочетанием клавишь ctrl+alt и откроем программу mRemoteNG:
+7. Выйдем из окна ВМ сочетанием клавиш ctrl+alt и откроем программу mRemoteNG:
    ![mRemoteNG-main-gui](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-main-gui.png?raw=true)
 
 8. Нажмём "Файл" -> "Новое подключение" или ctrl+n:
@@ -81,7 +81,7 @@
 
 12. Нажимаем два раза по подключению, выбираем "Да" и попадаем на сервер.
 
-13. Установка Docker: WIP
+13. Установка Docker будет в следующем уроке, поздравляю, что справились с этим!
    
 Источники:
 1) [mRemoteNG documentation](https://mremoteng.readthedocs.io/en/v1.77.3-dev/)
