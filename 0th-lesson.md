@@ -74,9 +74,13 @@
         - Пароль - по причине выше, пароль при установке поставил toor, соответственно сюда же пишу toor.
         - Протокол - SSH version 2
         - Порт - 22
-   После успешного настройки подключения, огонёк правее иконки стал зелёным.
+
+   - После успешной настройки подключения, огонёк правее иконки стал зелёным.
+   
    ![mRemoteNG-configuration-tab-complete](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-configuration-tab-complete.png?raw=true)
 
+10. Нажимаем два раза по подключению, выбираем "Да" и попадаем на сервер.
+   
 Источники:
 1) [mRemoteNG documentation](https://mremoteng.readthedocs.io/en/v1.77.3-dev/)
 2) [Гипервизор простыми словами](https://www.rusonyx.ru/blog/post/chto-takoe-hypervisor/)
