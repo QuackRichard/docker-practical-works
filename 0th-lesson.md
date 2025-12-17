@@ -81,7 +81,7 @@
 
 12. Нажимаем два раза по подключению, выбираем "Да" и попадаем на сервер.
 
-13. Установка Docker:
+13. Установка Docker: WIP
    
 Источники:
 1) [mRemoteNG documentation](https://mremoteng.readthedocs.io/en/v1.77.3-dev/)
