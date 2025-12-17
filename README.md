@@ -33,7 +33,7 @@ Docker - технология, позволяющая контейнизиров
 5) Docker Compose - Позволяет описать **ЧТО** нужно после запуска конетейнера, а не **КАК** это создать. Благодаря подходу **ЧТО** позволяет развернуть приложение, состоящие не только из одного сервиса.
 
 Содержание WIP:
-<br>[0-й урок, установка и настройка](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson.md)
+<br>[0-й урок, установка и настройка рабочего окружения](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson.md)
 
 Источники:
 1) [Tech Upskill : A Brief History of Containers](https://youtu.be/NtCNAxq_jVw)
