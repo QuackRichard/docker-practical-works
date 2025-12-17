@@ -55,17 +55,27 @@
    Должны получить 2 адреса: 1) lo-адрес и 2) в **моём** случае адаптера ens33 c адресом 192.168.0.21, запомним.
    ![Debian-docker-practice-ip-c-a-command](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/Debian-docker-practice-ip-c-a-command.png?raw=true)
    
-7. Выйдем из окна ВМ сочетанием клавишь ctrl+alt и откроем программу mRemoteNG:
+6. Выйдем из окна ВМ сочетанием клавишь ctrl+alt и откроем программу mRemoteNG:
    ![mRemoteNG-main-gui](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-main-gui.png?raw=true)
 
-8. Нажмём "Файл" -> "Новое подключение" или ctrl+n:
+7. Нажмём "Файл" -> "Новое подключение" или ctrl+n:
    ![mRemoteNG-new-connection](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-new-connection.png?raw=true)
 
-9. Пишем имя подключения, к примеру "Debian-docker-practice", нажимаем enter и смотрим ниже на вкладку "Конфигурация":
+8. Пишем имя подключения, к примеру "Debian-docker-practice", нажимаем enter и смотрим ниже на вкладку "Конфигурация":
    ![mRemoteNG-configuration-tab](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-configuration-tab.png?raw=true)
 
-10. 
-   
+9. В этой вкладке есть множество настроек:
+   - Из интересного:
+      - Значок - для быстрой навигации по подключениям.
+      - Имя вкладки - при открытие нескольких соединений с одинаковым именем вкладки, они логично будут в одной вкладке, удобно для группирования нескольких подключений.
+   - Из нужного:
+        - Имя хоста / IP - сюда пишем ip, который ранее запомнили.
+        - Пользователь - так как это учебный стенд, пишу root
+        - Пароль - по причине выше, пароль при установке поставил toor, соответственно сюда же пишу toor.
+        - Протокол - SSH version 2
+        - Порт - 22
+   После успешного настройки подключения, огонёк правее иконки стал зелёным.
+   ![mRemoteNG-configuration-tab-complete](https://github.com/QuackRichard/docker-practical-works/blob/main/0th-lesson-materials/mRemoteNG-configuration-tab-complete.png?raw=true)
 
 Источники:
 1) [mRemoteNG documentation](https://mremoteng.readthedocs.io/en/v1.77.3-dev/)
