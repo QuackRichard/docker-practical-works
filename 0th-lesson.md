@@ -15,9 +15,14 @@
    - [VMware Workstation 17.6.4](https://disk.yandex.ru/d/fG5QisWQkvQzSw) | sha256 - 10fe3a36f525d88aa133118ab3b5a16b18da88d4aa11b14d74e4164b3fb94ba9
    - [mRemoteNG 1.76.20](https://github.com/mRemoteNG/mRemoteNG/releases/download/v1.76.20/mRemoteNG-Installer-1.76.20.24615.msi)
    - [ОС Debian 13.2](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.2.0-amd64-netinst.iso)
+3. Почему именно эти программы?
+   - VMware workstation - По сравнению с VMware Player и Oracle VirtualBox оказалась самой удобной для **имеено** для **меня**.
+   - mRemoteNG - По сравнению с PuTTY, ssh сессиями запущенными в screen'е, так же оказалась самой удобной + эта программа сама подхватывает мои присеты сессий от PuTTY.
+   - 
 
 Перейдём к дейстию:
-
+1. Скачиваем и устанавливаем VMware workstation, mRemoteNG и iso образа ОС Debian, установка VMware workstation пройдёт без проблем так как после ноября 2024 года, программа стала бесплатной для всех, поэтому просто кликаем по принципу next, next install. По такому же принципу устанавливаем mRemoteNG.
+2. Создание нашей первой машины
 
 Источники:
 1) [mRemoteNG documentation](https://mremoteng.readthedocs.io/en/v1.77.3-dev/)
